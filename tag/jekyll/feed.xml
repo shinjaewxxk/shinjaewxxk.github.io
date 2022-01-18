@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://shinjaewxxk.github.io/tag/jekyll/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://shinjaewxxk.github.io/" rel="alternate" type="text/html" />
-  <updated>2022-01-18T23:22:17+09:00</updated>
+  <updated>2022-01-19T00:37:34+09:00</updated>
   <id>https://shinjaewxxk.github.io/tag/jekyll/feed.xml</id>
 
   
@@ -32,12 +32,34 @@
 
   
     <entry>
-      <title type="html">Jekyll 강좌(1) - Python 기본</title>
-      <link href="https://shinjaewxxk.github.io/jekyll-basic" rel="alternate" type="text/html" title="Jekyll 강좌(1) - Python 기본" />
-      <published>2018-09-28T01:40:00+09:00</published>
-      <updated>2018-09-28T01:40:00+09:00</updated>
+      <title type="html">Jekyll blog - 카테고리별 포스팅 방법</title>
+      <link href="https://shinjaewxxk.github.io/jekyll-basic" rel="alternate" type="text/html" title="Jekyll blog - 카테고리별 포스팅 방법" />
+      <published>2022-01-18T00:00:00+09:00</published>
+      <updated>2022-01-18T00:00:00+09:00</updated>
       <id>https://shinjaewxxk.github.io/jekyll-basic</id>
-      <content type="html" xml:base="https://shinjaewxxk.github.io/jekyll-basic">&lt;p&gt;python tag를 추후에 원하는 태그명으로 설정해야함&lt;/p&gt;</content>
+      <content type="html" xml:base="https://shinjaewxxk.github.io/jekyll-basic">&lt;p&gt;블로그 카테고리를 만들고 그 안에 글을 작성해보자&lt;/p&gt;
+
+&lt;p&gt;1.카테고리 만드는 방법 : tags.yaml에 추가하고싶은 카테고리명으로 다음과 같이 설정&lt;/p&gt;
+
+&lt;p&gt;opencv :
+name: opencv
+description: False
+cover: assets/built/images/background-frontend.jpg&lt;/p&gt;
+
+&lt;p&gt;2.카테고리를 메뉴바에 나타내는 방법 : navigation.html에 다음과 같은 코드 추가&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;nav-opencv&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;menuitem&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/tag/opencv/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;OpenCV&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;3.카테고리 안에 글을 작성하는 방법 : 2022-01-18-opencv-basic.md 라는 파일을 추가&lt;/p&gt;
+
+&lt;p&gt;이때에 opencv자리에 본인이 정한 태크(카테고리)명이 들어와야함&lt;/p&gt;
+
+&lt;p&gt;4.글 안에서 태그를 다음과 같이 설정&lt;/p&gt;
+
+&lt;p&gt;tags: [opencv]
+class: post-template
+subclass: ‘post tag-opencv’&lt;/p&gt;</content>
 
       
       
@@ -58,7 +80,7 @@
       
 
       
-        <summary type="html">python tag를 추후에 원하는 태그명으로 설정해야함</summary>
+        <summary type="html">블로그 카테고리를 만들고 그 안에 글을 작성해보자</summary>
       
 
       

@@ -8,6 +8,35 @@
     
       
       <item>
+        <title>OpenCV 기초 - OpenCV tutorials</title>
+        
+          <description>&lt;p&gt;2022-01-19 opencv 포스팅 시작!&lt;/p&gt;
+</description>
+        
+        <pubDate>Tue, 18 Jan 2022 00:00:00 +0900</pubDate>
+        <link>
+        https://shinjaewxxk.github.io/opencv-basic</link>
+        <guid isPermaLink="true">https://shinjaewxxk.github.io/opencv-basic</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Jekyll blog - 카테고리별 포스팅 방법</title>
+        
+          <description>&lt;p&gt;블로그 카테고리를 만들고 그 안에 글을 작성해보자&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 18 Jan 2022 00:00:00 +0900</pubDate>
+        <link>
+        https://shinjaewxxk.github.io/jekyll-basic</link>
+        <guid isPermaLink="true">https://shinjaewxxk.github.io/jekyll-basic</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Python 강좌(2) - Python 제어문</title>
         
           <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Python 강좌는 여러 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
@@ -41,20 +70,6 @@
         <link>
         https://shinjaewxxk.github.io/python-basic</link>
         <guid isPermaLink="true">https://shinjaewxxk.github.io/python-basic</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>Jekyll 강좌(1) - Python 기본</title>
-        
-          <description>&lt;p&gt;python tag를 추후에 원하는 태그명으로 설정해야함&lt;/p&gt;
-</description>
-        
-        <pubDate>Fri, 28 Sep 2018 01:40:00 +0900</pubDate>
-        <link>
-        https://shinjaewxxk.github.io/jekyll-basic</link>
-        <guid isPermaLink="true">https://shinjaewxxk.github.io/jekyll-basic</guid>
       </item>
       
     

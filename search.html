@@ -135,6 +135,7 @@ into the {body} of the default.hbs template -->
     <li class="nav-about" role="menuitem"><a href="/about/">About</a></li>
     <li class="nav-jekyll" role="menuitem"><a href="/tag/jekyll/">Jekyll</a></li>
     <li class="nav-python" role="menuitem"><a href="/tag/python/">Python</a></li>
+    <li class="nav-opencv" role="menuitem"><a href="/tag/opencv/">OpenCV</a></li>
     <li class="nav-archive" role="menuitem">
         <a href="/archive.html">All Posts</a>
     </li>
@@ -183,6 +184,24 @@ into the {body} of the default.hbs template -->
 <script>
     window.store = {
     
+    "opencv-basic": {
+        "title": "OpenCV 기초 - OpenCV tutorials",
+            "author": "shinjaewxxk",
+            "category": "",
+            "content": "2022-01-19 opencv 포스팅 시작!",
+        "url": "/opencv-basic"
+    }
+    ,
+    
+    "jekyll-basic": {
+        "title": "Jekyll blog - 카테고리별 포스팅 방법",
+            "author": "shinjaewxxk",
+            "category": "",
+            "content": "블로그 카테고리를 만들고 그 안에 글을 작성해보자1.카테고리 만드는 방법 : tags.yaml에 추가하고싶은 카테고리명으로 다음과 같이 설정opencv :name: opencvdescription: Falsecover: assets/built/images/background-frontend.jpg2.카테고리를 메뉴바에 나타내는 방법 : navigation.html에 다음과 같은 코드 추가&lt;li class=\"nav-opencv\" role=\"menuitem\"&gt;&lt;a href=\"/tag/opencv/\"&gt;OpenCV&lt;/a&gt;&lt;/li&gt;3.카테고리 안에 글을 작성하는 방법 : 2022-01-18-opencv-basic.md 라는 파일을 추가이때에 opencv자리에 본인이 정한 태크(카테고리)명이 들어와야함4.글 안에서 태그를 다음과 같이 설정tags: [opencv]class: post-templatesubclass: ‘post tag-opencv’",
+        "url": "/jekyll-basic"
+    }
+    ,
+    
     "python-control-statement": {
         "title": "Python 강좌(2) - Python 제어문",
             "author": "shinjaewxxk",
@@ -198,15 +217,6 @@ into the {body} of the default.hbs template -->
             "category": "",
             "content": "Python 강좌는 여러 절로 구성되어 있습니다.     Python 강좌(1) - Python 기본    Python 강좌(2) - Python 제어문python tag를 추후에 원하는 태그명으로 설정해야함이 글은 python의 제어문에 대한 내용을 담고 있습니다.!function syntaxHighlight(code) {   var foo = 'Hello World';   var bar = 100;}",
         "url": "/python-basic"
-    }
-    ,
-    
-    "jekyll-basic": {
-        "title": "Jekyll 강좌(1) - Python 기본",
-            "author": "shinjaewxxk",
-            "category": "",
-            "content": "python tag를 추후에 원하는 태그명으로 설정해야함",
-        "url": "/jekyll-basic"
     }
     
     

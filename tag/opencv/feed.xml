@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
+  <link href="https://shinjaewxxk.github.io/tag/opencv/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://shinjaewxxk.github.io/" rel="alternate" type="text/html" />
+  <updated>2022-01-19T00:37:34+09:00</updated>
+  <id>https://shinjaewxxk.github.io/tag/opencv/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">wxxk’s dev_log | </title>
+  
+
+  
+    <subtitle>코드조각</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">OpenCV 기초 - OpenCV tutorials</title>
+      <link href="https://shinjaewxxk.github.io/opencv-basic" rel="alternate" type="text/html" title="OpenCV 기초 - OpenCV tutorials" />
+      <published>2022-01-18T00:00:00+09:00</published>
+      <updated>2022-01-18T00:00:00+09:00</updated>
+      <id>https://shinjaewxxk.github.io/opencv-basic</id>
+      <content type="html" xml:base="https://shinjaewxxk.github.io/opencv-basic">&lt;p&gt;2022-01-19 opencv 포스팅 시작!&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>shinjaewxxk</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="opencv" />
+      
+
+      
+        <summary type="html">2022-01-19 opencv 포스팅 시작!</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>
