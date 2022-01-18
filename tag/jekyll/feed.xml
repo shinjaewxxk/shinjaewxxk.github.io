@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
+  <link href="https://shinjaewxxk.github.io/tag/jekyll/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://shinjaewxxk.github.io/" rel="alternate" type="text/html" />
+  <updated>2022-01-18T18:55:34+09:00</updated>
+  <id>https://shinjaewxxk.github.io/tag/jekyll/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">wxxk’s dev_log | </title>
+  
+
+  
+    <subtitle>개발일지</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">Jekyll 강좌(1) - Python 기본</title>
+      <link href="https://shinjaewxxk.github.io/jekyll-basic" rel="alternate" type="text/html" title="Jekyll 강좌(1) - Python 기본" />
+      <published>2018-09-28T01:40:00+09:00</published>
+      <updated>2018-09-28T01:40:00+09:00</updated>
+      <id>https://shinjaewxxk.github.io/jekyll-basic</id>
+      <content type="html" xml:base="https://shinjaewxxk.github.io/jekyll-basic">&lt;p&gt;python tag를 추후에 원하는 태그명으로 설정해야함&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>shinjaewxxk</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="jekyll" />
+      
+
+      
+        <summary type="html">python tag를 추후에 원하는 태그명으로 설정해야함</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>
