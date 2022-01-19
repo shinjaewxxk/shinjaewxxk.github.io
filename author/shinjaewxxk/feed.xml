@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://shinjaewxxk.github.io/author/shinjaewxxk/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://shinjaewxxk.github.io/" rel="alternate" type="text/html" />
-  <updated>2022-01-19T17:52:12+09:00</updated>
+  <updated>2022-01-19T23:56:57+09:00</updated>
   <id>https://shinjaewxxk.github.io/author/shinjaewxxk/feed.xml</id>
 
   
@@ -149,10 +149,67 @@
     &lt;li&gt;&lt;a href=&quot;./opencv-ch4&quot;&gt;OpenCV 프로그래밍 - Chapter 04 OpenCV 기본연산&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./opencv-ch5&quot;&gt;OpenCV 프로그래밍 - Chapter 05 임계값과 히스토그램 처리&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./opencv-ch6&quot;&gt;OpenCV 프로그래밍 - Chapter 06 영상 공간 필터링&lt;/a&gt;&lt;/li&gt;
-
-
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;이 포스팅은 ‘python으로 배우는 OpenCV 프로그래밍’ 교재를 참고하여 작성하였습니다.&lt;/strong&gt;&lt;/p&gt;</content>
+&lt;p&gt;&lt;strong&gt;이 포스팅은 ‘python으로 배우는 OpenCV 프로그래밍’ 교재를 참고하여 작성하였습니다.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;01-영상-입출력과-디스플레이&quot;&gt;01 영상 입출력과 디스플레이&lt;/h2&gt;
+
+&lt;p&gt;파이썬에서 OpenCV로 영상파일을 읽고, 윈도우 화면에 표시하고, 파일로 저장하는 방법에 대해 알아본다.&lt;/p&gt;
+
+&lt;p&gt;아래 표현에서 []는 생략 가능한 옵션을 나타내고, 화살표는 함수의 반환값을 표현한다.&lt;/p&gt;
+
+&lt;p&gt;반환값이 없을 경우 화살표는 생략한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;영상-입출력과-디스플레이-함수&quot;&gt;영상 입출력과 디스플레이 함수&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;함수&lt;/th&gt;
+      &lt;th&gt;비고&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cv2.imread(filename[,flags]) -&amp;gt; retval&lt;/td&gt;
+      &lt;td&gt;영상 입력&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cv2.imwrite(filename,img[,params]) -&amp;gt; retval&lt;/td&gt;
+      &lt;td&gt;영상파일 출력&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cv2.namedWindow(winname[,flags])&lt;/td&gt;
+      &lt;td&gt;윈도우 생성&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cv2.imshow(winname, mat)&lt;/td&gt;
+      &lt;td&gt;윈도우 표시&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cv2.waitKey([, delay]) -&amp;gt; retval&lt;/td&gt;
+      &lt;td&gt;키보드 입력 대기&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cv2.destroyWindow(winname)&lt;/td&gt;
+      &lt;td&gt;윈도우 파괴&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cv2.destroyAllWindows()&lt;/td&gt;
+      &lt;td&gt;모든 윈도우 파괴&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;각 메서드에 대한 설명&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;cv2.imread()는 영상파일을 numpy.ndarray의 배열로 읽어 반환한다.&lt;br /&gt;읽기에 실패하면 None을 반환하며, flags는 &lt;span style=&quot;background-color: #F7DDBE&quot;&gt;cv2.IMREAD_COLOR(디폴트)&lt;/span&gt;, &lt;span style=&quot;background-color: #F7DDBE&quot;&gt;cv2.IMREAD_GRAYSCALE&lt;/span&gt;, &lt;span style=&quot;background-color: #F7DDBE&quot;&gt;cv2.IMREAD_UNCHANGED&lt;/span&gt;등의 읽기 옵션이다.&lt;/li&gt;
+  &lt;li&gt;cv2.imwrite()는 numpy.ndarray의 배열 img를 filename의 영상파일로 저장한다.&lt;br /&gt;파일의 확장자에 의해 영상포맷이 결정된다.&lt;br /&gt;params는 압축 관련 인수로 생략할 수 있다.&lt;/li&gt;
+  &lt;li&gt;cv2.namedWindow()는 지정한 winname에 해당하는 이름을 갖는 윈도우를 생성한다.&lt;br /&gt;flags는 &lt;span style=&quot;background-color: #F7DDBE&quot;&gt;cv2.WINDOW_AUTOSIZE(디폴트)&lt;/span&gt;, &lt;span style=&quot;background-color: #F7DDBE&quot;&gt;cv2.WINDOW_NORMAL&lt;/span&gt;이 있다.&lt;/li&gt;
+  &lt;li&gt;cv2.imshow()는 winname윈도우에 영상 mat를 표시한다.&lt;br /&gt;winname 윈도우가 생성되어 있지 않아도 실행가능하다.&lt;/li&gt;
+  &lt;li&gt;cv2&lt;/li&gt;
+&lt;/ol&gt;</content>
 
       
       
@@ -194,8 +251,6 @@
     &lt;li&gt;&lt;a href=&quot;./opencv-ch4&quot;&gt;OpenCV 프로그래밍 - Chapter 04 OpenCV 기본연산&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./opencv-ch5&quot;&gt;OpenCV 프로그래밍 - Chapter 05 임계값과 히스토그램 처리&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./opencv-ch6&quot;&gt;OpenCV 프로그래밍 - Chapter 06 영상 공간 필터링&lt;/a&gt;&lt;/li&gt;
-
-
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;이 포스팅은 ‘python으로 배우는 OpenCV 프로그래밍’ 교재를 참고하여 작성하였습니다.&lt;/strong&gt;&lt;/p&gt;
 
@@ -228,7 +283,23 @@
 
 &lt;p&gt;교재에서는 이를 구분하지만, 필자는 영상처리와 컴퓨터 비전은 같은 맥락이라고 생각하므로 따로 구분하진 않겠다.&lt;/p&gt;
 
-&lt;p&gt;##02 OpenCV 개요&lt;/p&gt;</content>
+&lt;h2 id=&quot;02-opencv-개요&quot;&gt;02 OpenCV 개요&lt;/h2&gt;
+
+&lt;p&gt;OpenCV(Open Source Computer Vision)는 영상처리, 컴퓨터 비전, 비디오처리, 기계학습 등을 포함한 라이브러리이다.&lt;/p&gt;
+
+&lt;p&gt;OpenCV는 교육 및 상업 목적 사용이 모두 무료이다.&lt;/p&gt;
+
+&lt;p&gt;OpenCV는 윈도우, 리눅스, 안드로이드, 맥 등의 다양한 플랫폼에서 사용할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;주로 Python을 사용하고 이 교재도 마찬가지로 Python을 사용한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;03-파이썬-numpy-matplotlib-opencv-설치&quot;&gt;03 파이썬, Numpy, Matplotlib, OpenCV 설치&lt;/h2&gt;
+
+&lt;p&gt;필자는 모든 설치를 마친 상태이며, 파이썬과 각 모듈설치 방법은 검색하면 자세히 나오므로 검색해보길 바란다.&lt;/p&gt;
+
+&lt;p&gt;필자가 사용하는 파이썬과 모듈의 버전은 다음과 같다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img width=&quot;110%&quot; alt=&quot;스크린샷 2022-01-19 오후 9 58 54&quot; src=&quot;https://user-images.githubusercontent.com/97214209/150135487-1fa876ac-4b11-4851-8fd2-0177d94d4cc5.png&quot; /&gt;&lt;/p&gt;</content>
 
       
       

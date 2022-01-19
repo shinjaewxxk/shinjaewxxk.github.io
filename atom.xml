@@ -18,10 +18,9 @@
     &lt;li&gt;&lt;a href=&quot;./opencv-ch4&quot;&gt;OpenCV 프로그래밍 - Chapter 04 OpenCV 기본연산&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./opencv-ch5&quot;&gt;OpenCV 프로그래밍 - Chapter 05 임계값과 히스토그램 처리&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./opencv-ch6&quot;&gt;OpenCV 프로그래밍 - Chapter 06 영상 공간 필터링&lt;/a&gt;&lt;/li&gt;
-
-
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;이 포스팅은 ‘python으로 배우는 OpenCV 프로그래밍’ 교재를 참고하여 작성하였습니다.&lt;/strong&gt;&lt;/p&gt;
+
 </description>
         
         <pubDate>Wed, 19 Jan 2022 00:00:00 +0900</pubDate>
@@ -81,8 +80,6 @@
     &lt;li&gt;&lt;a href=&quot;./opencv-ch4&quot;&gt;OpenCV 프로그래밍 - Chapter 04 OpenCV 기본연산&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./opencv-ch5&quot;&gt;OpenCV 프로그래밍 - Chapter 05 임계값과 히스토그램 처리&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./opencv-ch6&quot;&gt;OpenCV 프로그래밍 - Chapter 06 영상 공간 필터링&lt;/a&gt;&lt;/li&gt;
-
-
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;이 포스팅은 ‘python으로 배우는 OpenCV 프로그래밍’ 교재를 참고하여 작성하였습니다.&lt;/strong&gt;&lt;/p&gt;
 

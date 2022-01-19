@@ -216,10 +216,68 @@ into the {body} of the default.hbs template -->
     <li><a href="./opencv-ch4">OpenCV 프로그래밍 - Chapter 04 OpenCV 기본연산</a></li>
     <li><a href="./opencv-ch5">OpenCV 프로그래밍 - Chapter 05 임계값과 히스토그램 처리</a></li>
     <li><a href="./opencv-ch6">OpenCV 프로그래밍 - Chapter 06 영상 공간 필터링</a></li>
-
-
 </ul>
 <p><strong>이 포스팅은 ‘python으로 배우는 OpenCV 프로그래밍’ 교재를 참고하여 작성하였습니다.</strong></p>
+
+<h2 id="01-영상-입출력과-디스플레이">01 영상 입출력과 디스플레이</h2>
+
+<p>파이썬에서 OpenCV로 영상파일을 읽고, 윈도우 화면에 표시하고, 파일로 저장하는 방법에 대해 알아본다.</p>
+
+<p>아래 표현에서 []는 생략 가능한 옵션을 나타내고, 화살표는 함수의 반환값을 표현한다.</p>
+
+<p>반환값이 없을 경우 화살표는 생략한다.</p>
+
+<h3 id="영상-입출력과-디스플레이-함수">영상 입출력과 디스플레이 함수</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>함수</th>
+      <th>비고</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cv2.imread(filename[,flags]) -&gt; retval</td>
+      <td>영상 입력</td>
+    </tr>
+    <tr>
+      <td>cv2.imwrite(filename,img[,params]) -&gt; retval</td>
+      <td>영상파일 출력</td>
+    </tr>
+    <tr>
+      <td>cv2.namedWindow(winname[,flags])</td>
+      <td>윈도우 생성</td>
+    </tr>
+    <tr>
+      <td>cv2.imshow(winname, mat)</td>
+      <td>윈도우 표시</td>
+    </tr>
+    <tr>
+      <td>cv2.waitKey([, delay]) -&gt; retval</td>
+      <td>키보드 입력 대기</td>
+    </tr>
+    <tr>
+      <td>cv2.destroyWindow(winname)</td>
+      <td>윈도우 파괴</td>
+    </tr>
+    <tr>
+      <td>cv2.destroyAllWindows()</td>
+      <td>모든 윈도우 파괴</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>각 메서드에 대한 설명</strong></p>
+
+<ol>
+  <li>cv2.imread()는 영상파일을 numpy.ndarray의 배열로 읽어 반환한다.<br />읽기에 실패하면 None을 반환하며, flags는 <span style="background-color: #F7DDBE">cv2.IMREAD_COLOR(디폴트)</span>, <span style="background-color: #F7DDBE">cv2.IMREAD_GRAYSCALE</span>, <span style="background-color: #F7DDBE">cv2.IMREAD_UNCHANGED</span>등의 읽기 옵션이다.</li>
+  <li>cv2.imwrite()는 numpy.ndarray의 배열 img를 filename의 영상파일로 저장한다.<br />파일의 확장자에 의해 영상포맷이 결정된다.<br />params는 압축 관련 인수로 생략할 수 있다.</li>
+  <li>cv2.namedWindow()는 지정한 winname에 해당하는 이름을 갖는 윈도우를 생성한다.<br />flags는 <span style="background-color: #F7DDBE">cv2.WINDOW_AUTOSIZE(디폴트)</span>, <span style="background-color: #F7DDBE">cv2.WINDOW_NORMAL</span>이 있다.</li>
+  <li>cv2.imshow()는 winname윈도우에 영상 mat를 표시한다.<br />winname 윈도우가 생성되어 있지 않아도 실행가능하다.</li>
+  <li>cv2</li>
+</ol>
+
 
                 </div>
             </section>
