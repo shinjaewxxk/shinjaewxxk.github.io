@@ -8,6 +8,25 @@
     
       
       <item>
+        <title>Jekyll blog - 마크다운 문법을 이용한 포스팅 방법</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll blog posting &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-basic&quot;&gt;Jekyll blog - 카테고리별 포스팅 방법&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-basic2&quot;&gt;Jekyll blog - 마크다운 문법을 이용한 포스팅 방법&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;각 포스팅을 작성하기 위한 마크다운 문법을 알아보자&lt;/strong&gt;&lt;/p&gt;
+</description>
+        
+        <pubDate>Wed, 19 Jan 2022 00:00:00 +0900</pubDate>
+        <link>
+        https://shinjaewxxk.github.io/jekyll-basic2</link>
+        <guid isPermaLink="true">https://shinjaewxxk.github.io/jekyll-basic2</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>OpenCV 기초 - OpenCV tutorials</title>
         
           <description>&lt;p&gt;2022-01-19 opencv 포스팅 시작!&lt;/p&gt;
@@ -24,7 +43,12 @@
       <item>
         <title>Jekyll blog - 카테고리별 포스팅 방법</title>
         
-          <description>&lt;p&gt;블로그 카테고리를 만들고 그 안에 글을 작성해보자&lt;/p&gt;
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll blog posting &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-basic&quot;&gt;Jekyll blog - 카테고리별 포스팅 방법&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-basic2&quot;&gt;Jekyll blog - 마크다운 문법을 이용한 포스팅 방법&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;블로그 카테고리를 만들고 그 안에 글을 작성해보자&lt;/strong&gt;&lt;/p&gt;
 
 </description>
         
@@ -44,7 +68,7 @@
     &lt;li&gt;&lt;a href=&quot;./python-basic&quot;&gt;Python 강좌(1) - Python 기본&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;Python 강좌(2) - Python 제어문&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
+&lt;p&gt;python tag를 추후에 원하는 태그명으로 설정해야함&lt;/p&gt;
 </description>
         
         <pubDate>Mon, 08 Jun 2020 00:00:00 +0900</pubDate>
@@ -63,7 +87,12 @@
     &lt;li&gt;&lt;a href=&quot;./python-basic&quot;&gt;Python 강좌(1) - Python 기본&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;Python 강좌(2) - Python 제어문&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
+&lt;p&gt;python tag를 추후에 원하는 태그명으로 설정해야함&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;syntaxHighlight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;Hello World&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         
         <pubDate>Fri, 28 Sep 2018 01:40:00 +0900</pubDate>

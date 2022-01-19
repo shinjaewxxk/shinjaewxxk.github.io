@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://shinjaewxxk.github.io/tag/jekyll/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://shinjaewxxk.github.io/" rel="alternate" type="text/html" />
-  <updated>2022-01-19T00:37:34+09:00</updated>
+  <updated>2022-01-19T11:16:14+09:00</updated>
   <id>https://shinjaewxxk.github.io/tag/jekyll/feed.xml</id>
 
   
@@ -32,12 +32,56 @@
 
   
     <entry>
+      <title type="html">Jekyll blog - 마크다운 문법을 이용한 포스팅 방법</title>
+      <link href="https://shinjaewxxk.github.io/jekyll-basic2" rel="alternate" type="text/html" title="Jekyll blog - 마크다운 문법을 이용한 포스팅 방법" />
+      <published>2022-01-19T00:00:00+09:00</published>
+      <updated>2022-01-19T00:00:00+09:00</updated>
+      <id>https://shinjaewxxk.github.io/jekyll-basic2</id>
+      <content type="html" xml:base="https://shinjaewxxk.github.io/jekyll-basic2">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll blog posting &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-basic&quot;&gt;Jekyll blog - 카테고리별 포스팅 방법&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-basic2&quot;&gt;Jekyll blog - 마크다운 문법을 이용한 포스팅 방법&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;각 포스팅을 작성하기 위한 마크다운 문법을 알아보자&lt;/strong&gt;&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>shinjaewxxk</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="jekyll" />
+      
+
+      
+        <summary type="html">Jekyll blog posting Jekyll blog - 카테고리별 포스팅 방법 Jekyll blog - 마크다운 문법을 이용한 포스팅 방법 각 포스팅을 작성하기 위한 마크다운 문법을 알아보자</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
       <title type="html">Jekyll blog - 카테고리별 포스팅 방법</title>
       <link href="https://shinjaewxxk.github.io/jekyll-basic" rel="alternate" type="text/html" title="Jekyll blog - 카테고리별 포스팅 방법" />
       <published>2022-01-18T00:00:00+09:00</published>
       <updated>2022-01-18T00:00:00+09:00</updated>
       <id>https://shinjaewxxk.github.io/jekyll-basic</id>
-      <content type="html" xml:base="https://shinjaewxxk.github.io/jekyll-basic">&lt;p&gt;블로그 카테고리를 만들고 그 안에 글을 작성해보자&lt;/p&gt;
+      <content type="html" xml:base="https://shinjaewxxk.github.io/jekyll-basic">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll blog posting &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-basic&quot;&gt;Jekyll blog - 카테고리별 포스팅 방법&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-basic2&quot;&gt;Jekyll blog - 마크다운 문법을 이용한 포스팅 방법&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;블로그 카테고리를 만들고 그 안에 글을 작성해보자&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;1.카테고리 만드는 방법 : tags.yaml에 추가하고싶은 카테고리명으로 다음과 같이 설정&lt;/p&gt;
 
@@ -80,7 +124,7 @@ subclass: ‘post tag-opencv’&lt;/p&gt;</content>
       
 
       
-        <summary type="html">블로그 카테고리를 만들고 그 안에 글을 작성해보자</summary>
+        <summary type="html">Jekyll blog posting Jekyll blog - 카테고리별 포스팅 방법 Jekyll blog - 마크다운 문법을 이용한 포스팅 방법 블로그 카테고리를 만들고 그 안에 글을 작성해보자</summary>
       
 
       
