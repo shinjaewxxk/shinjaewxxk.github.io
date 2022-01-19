@@ -8,6 +8,31 @@
     
       
       <item>
+        <title>OpenCV 프로그래밍 - Chapter 02 영상 및 비디오 입출력</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;python으로 배우는 OpenCV 프로그래밍 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./opencv-ch1&quot;&gt;OpenCV 프로그래밍 - Chapter 01 서론&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./opencv-ch2&quot;&gt;OpenCV 프로그래밍 - Chapter 02 영상 및 비디오 입출력&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./opencv-ch3&quot;&gt;OpenCV 프로그래밍 - Chapter 03 간단한 그래픽 및 이벤트 처리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./opencv-ch4&quot;&gt;OpenCV 프로그래밍 - Chapter 04 OpenCV 기본연산&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./opencv-ch5&quot;&gt;OpenCV 프로그래밍 - Chapter 05 임계값과 히스토그램 처리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./opencv-ch6&quot;&gt;OpenCV 프로그래밍 - Chapter 06 영상 공간 필터링&lt;/a&gt;&lt;/li&gt;
+
+
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;이 포스팅은 ‘python으로 배우는 OpenCV 프로그래밍’ 교재를 참고하여 작성하였습니다.&lt;/strong&gt;&lt;/p&gt;
+</description>
+        
+        <pubDate>Wed, 19 Jan 2022 00:00:00 +0900</pubDate>
+        <link>
+        https://shinjaewxxk.github.io/opencv-ch2</link>
+        <guid isPermaLink="true">https://shinjaewxxk.github.io/opencv-ch2</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Jekyll blog - 웹사이트 파비콘(favicon) 설정 방법</title>
         
           <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll blog posting &lt;/span&gt;&lt;/p&gt;
@@ -46,20 +71,27 @@
     
       
       <item>
-        <title>OpenCV 기초 - OpenCV tutorials(1)</title>
+        <title>OpenCV 프로그래밍 - Chapter 01 서론</title>
         
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;OpenCV 기초 &lt;/span&gt;&lt;/p&gt;
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;python으로 배우는 OpenCV 프로그래밍 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./opencv-basic&quot;&gt;OpenCV 기초 - OpenCV tutorials(1)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./opencv-ch1&quot;&gt;OpenCV 프로그래밍 - Chapter 01 서론&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./opencv-ch2&quot;&gt;OpenCV 프로그래밍 - Chapter 02 영상 및 비디오 입출력&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./opencv-ch3&quot;&gt;OpenCV 프로그래밍 - Chapter 03 간단한 그래픽 및 이벤트 처리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./opencv-ch4&quot;&gt;OpenCV 프로그래밍 - Chapter 04 OpenCV 기본연산&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./opencv-ch5&quot;&gt;OpenCV 프로그래밍 - Chapter 05 임계값과 히스토그램 처리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./opencv-ch6&quot;&gt;OpenCV 프로그래밍 - Chapter 06 영상 공간 필터링&lt;/a&gt;&lt;/li&gt;
+
 
 &lt;/ul&gt;
-&lt;p&gt;2022-01-19 opencv 포스팅 시작!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;이 포스팅은 ‘python으로 배우는 OpenCV 프로그래밍’ 교재를 참고하여 작성하였습니다.&lt;/strong&gt;&lt;/p&gt;
+
 </description>
         
         <pubDate>Tue, 18 Jan 2022 00:00:00 +0900</pubDate>
         <link>
-        https://shinjaewxxk.github.io/opencv-basic</link>
-        <guid isPermaLink="true">https://shinjaewxxk.github.io/opencv-basic</guid>
+        https://shinjaewxxk.github.io/opencv-ch1</link>
+        <guid isPermaLink="true">https://shinjaewxxk.github.io/opencv-ch1</guid>
       </item>
       
     

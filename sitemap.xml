@@ -4,6 +4,22 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>https://shinjaewxxk.github.io/opencv-ch2.html</loc>
+        
+        <lastmod>2022-01-19T00:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>https://shinjaewxxk.github.io/jekyll-basic2.html</loc>
         
         <lastmod>2022-01-19T00:00:00+09:00</lastmod>
@@ -36,7 +52,7 @@
     </url>
     
     <url>
-        <loc>https://shinjaewxxk.github.io/opencv-basic.html</loc>
+        <loc>https://shinjaewxxk.github.io/opencv-ch1.html</loc>
         
         <lastmod>2022-01-18T00:00:00+09:00</lastmod>
         
