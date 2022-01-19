@@ -2,6 +2,15 @@
 <html>
 <head>
 
+    <!-- favifon Settings -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Document Settings -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -110,6 +119,7 @@
     <link rel="alternate" type="application/rss+xml" title="Search Result" href="/feed.xml" />
 
 
+
 </head>
 <body class="page-template">
 
@@ -185,10 +195,10 @@ into the {body} of the default.hbs template -->
     window.store = {
     
     "jekyll-basic2": {
-        "title": "Jekyll blog - 마크다운 문법을 이용한 포스팅 방법",
+        "title": "Jekyll blog - 웹사이트 파비콘(favicon) 설정 방법",
             "author": "shinjaewxxk",
             "category": "",
-            "content": "Jekyll blog posting     Jekyll blog - 카테고리별 포스팅 방법    Jekyll blog - 마크다운 문법을 이용한 포스팅 방법각 포스팅을 작성하기 위한 마크다운 문법을 알아보자",
+            "content": "Jekyll blog posting     Jekyll blog - 카테고리별 포스팅 방법    Jekyll blog - 웹사이트 파비콘(favicon) 설정 방법웹사이트 파비콘 설정하는 방법을 알아보자파비콘(favicon)이란?파비콘은 인터넷 웹 브라우저의 주소창에 접속했을 때, 상단 탭의 왼쪽에 작게 보여지는 아이콘을 말한다.즐겨찾기나 바로가기를 설정할 때도 사용되므로 웹사이트를 대표하는 아이콘이라고 할 수 있다.파비콘을 만들어주는 사이트https://realfavicongenerator.net/위 사이트는 원하는 이미지를 파비콘으로 변환시켜준다.사이트 이용 방법사이트에 접속하면 다음과 같은 화면을 볼 수 있는데 Select your Favicon image라 적혀있는 파란색 네모를 클릭하여 파비콘으로 변환하고 싶은 이미지를 로컬에서 업로드 한다.이미지를 업로드 했다면 다음과 같이 여러가지 설정이 가능한 페이지로 이동하고, 각자 취향에 맞게 조정한 후 스크롤을 내려 Generate your Favicons and HTML code라 적혀있는 파란색 네모를 클릭한다.클릭한 후 다음과 같은 화면이 나타나고, Favicon package라 적혀있는 파란색 네모를 클릭하면 파일을 다운로드 받을 수 있다.이 파일의 압축을 풀고 폴더 내 모든 파일을 서버의 루트가 되는 폴더에 복사한 후 생성된 코드를 복사하여 html의 &lt;head&gt;에 복사하면 설정한 파비콘을 사용가능하다.",
         "url": "/jekyll-basic2"
     }
     ,
@@ -215,7 +225,7 @@ into the {body} of the default.hbs template -->
         "title": "Jekyll blog - 카테고리별 포스팅 방법",
             "author": "shinjaewxxk",
             "category": "",
-            "content": "Jekyll blog posting     Jekyll blog - 카테고리별 포스팅 방법    Jekyll blog - 마크다운 문법을 이용한 포스팅 방법블로그 카테고리를 만들고 그 안에 글을 작성해보자1.카테고리 만드는 방법 : tags.yaml에 추가하고싶은 카테고리명으로 다음과 같이 설정opencv :name: opencvdescription: Falsecover: assets/built/images/background-frontend.jpg2.카테고리를 메뉴바에 나타내는 방법 : navigation.html에 다음과 같은 코드 추가&lt;li class=\"nav-opencv\" role=\"menuitem\"&gt;&lt;a href=\"/tag/opencv/\"&gt;OpenCV&lt;/a&gt;&lt;/li&gt;3.카테고리 안에 글을 작성하는 방법 : 2022-01-18-opencv-basic.md 라는 파일을 추가이때에 opencv자리에 본인이 정한 태크(카테고리)명이 들어와야함4.글 안에서 태그를 다음과 같이 설정tags: [opencv]class: post-templatesubclass: ‘post tag-opencv’",
+            "content": "Jekyll blog posting     Jekyll blog - 카테고리별 포스팅 방법    Jekyll blog - 웹사이트 파비콘(favicon) 설정 방법블로그 카테고리를 만들고 그 안에 글을 작성해보자1.카테고리 만드는 방법 : tags.yaml에 추가하고싶은 카테고리명으로 다음과 같이 설정opencv :name: opencvdescription: Falsecover: assets/built/images/background-frontend.jpg2.카테고리를 메뉴바에 나타내는 방법 : navigation.html에 다음과 같은 코드 추가&lt;li class=\"nav-opencv\" role=\"menuitem\"&gt;&lt;a href=\"/tag/opencv/\"&gt;OpenCV&lt;/a&gt;&lt;/li&gt;3.카테고리 안에 글을 작성하는 방법 : 2022-01-18-opencv-basic.md 라는 파일을 추가이때에 opencv자리에 본인이 정한 태크(카테고리)명이 들어와야함4.글 안에서 태그를 다음과 같이 설정tags: [opencv]class: post-templatesubclass: ‘post tag-opencv’",
         "url": "/jekyll-basic"
     }
     

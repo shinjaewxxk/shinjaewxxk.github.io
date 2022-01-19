@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://shinjaewxxk.github.io/tag/jekyll/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://shinjaewxxk.github.io/" rel="alternate" type="text/html" />
-  <updated>2022-01-19T11:37:21+09:00</updated>
+  <updated>2022-01-19T14:53:37+09:00</updated>
   <id>https://shinjaewxxk.github.io/tag/jekyll/feed.xml</id>
 
   
@@ -32,17 +32,43 @@
 
   
     <entry>
-      <title type="html">Jekyll blog - 마크다운 문법을 이용한 포스팅 방법</title>
-      <link href="https://shinjaewxxk.github.io/jekyll-basic2" rel="alternate" type="text/html" title="Jekyll blog - 마크다운 문법을 이용한 포스팅 방법" />
+      <title type="html">Jekyll blog - 웹사이트 파비콘(favicon) 설정 방법</title>
+      <link href="https://shinjaewxxk.github.io/jekyll-basic2" rel="alternate" type="text/html" title="Jekyll blog - 웹사이트 파비콘(favicon) 설정 방법" />
       <published>2022-01-19T00:00:00+09:00</published>
       <updated>2022-01-19T00:00:00+09:00</updated>
       <id>https://shinjaewxxk.github.io/jekyll-basic2</id>
       <content type="html" xml:base="https://shinjaewxxk.github.io/jekyll-basic2">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll blog posting &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./jekyll-basic&quot;&gt;Jekyll blog - 카테고리별 포스팅 방법&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-basic2&quot;&gt;Jekyll blog - 마크다운 문법을 이용한 포스팅 방법&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-basic2&quot;&gt;Jekyll blog - 웹사이트 파비콘(favicon) 설정 방법&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;각 포스팅을 작성하기 위한 마크다운 문법을 알아보자&lt;/strong&gt;&lt;/p&gt;</content>
+&lt;p&gt;&lt;strong&gt;웹사이트 파비콘 설정하는 방법을 알아보자&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;파비콘favicon이란&quot;&gt;파비콘(favicon)이란?&lt;/h3&gt;
+&lt;p&gt;파비콘은 인터넷 웹 브라우저의 주소창에 접속했을 때, 상단 탭의 왼쪽에 작게 보여지는 아이콘을 말한다.&lt;/p&gt;
+
+&lt;p&gt;즐겨찾기나 바로가기를 설정할 때도 사용되므로 웹사이트를 대표하는 아이콘이라고 할 수 있다.&lt;/p&gt;
+
+&lt;h3 id=&quot;파비콘을-만들어주는-사이트&quot;&gt;파비콘을 만들어주는 사이트&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://realfavicongenerator.net/&quot;&gt;https://realfavicongenerator.net/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;위 사이트는 원하는 이미지를 파비콘으로 변환시켜준다.&lt;/p&gt;
+
+&lt;h3 id=&quot;사이트-이용-방법&quot;&gt;사이트 이용 방법&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/97214209/150071231-f31d641a-adae-4cfd-96dd-d15666632fb1.png&quot; alt=&quot;image&quot; width=&quot;110%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;사이트에 접속하면 다음과 같은 화면을 볼 수 있는데 Select your Favicon image라 적혀있는 파란색 네모를 클릭하여 파비콘으로 변환하고 싶은 이미지를 로컬에서 업로드 한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/97214209/150071665-27db66c8-0106-43a7-aab1-77e0f7ae8d49.png&quot; alt=&quot;image&quot; width=&quot;110%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;이미지를 업로드 했다면 다음과 같이 여러가지 설정이 가능한 페이지로 이동하고, 각자 취향에 맞게 조정한 후 스크롤을 내려 Generate your Favicons and HTML code라 적혀있는 파란색 네모를 클릭한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/97214209/150071780-7235ee03-33bb-483e-b298-2f6f59ddd116.png&quot; alt=&quot;image&quot; width=&quot;110%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;클릭한 후 다음과 같은 화면이 나타나고, Favicon package라 적혀있는 파란색 네모를 클릭하면 파일을 다운로드 받을 수 있다.&lt;/p&gt;
+
+&lt;p&gt;이 파일의 압축을 풀고 폴더 내 모든 파일을 서버의 루트가 되는 폴더에 복사한 후 생성된 코드를 복사하여 html의 &amp;lt;head&amp;gt;에 복사하면 설정한 파비콘을 사용가능하다.&lt;/p&gt;</content>
 
       
       
@@ -63,7 +89,7 @@
       
 
       
-        <summary type="html">Jekyll blog posting Jekyll blog - 카테고리별 포스팅 방법 Jekyll blog - 마크다운 문법을 이용한 포스팅 방법 각 포스팅을 작성하기 위한 마크다운 문법을 알아보자</summary>
+        <summary type="html">Jekyll blog posting Jekyll blog - 카테고리별 포스팅 방법 Jekyll blog - 웹사이트 파비콘(favicon) 설정 방법 웹사이트 파비콘 설정하는 방법을 알아보자</summary>
       
 
       
@@ -79,7 +105,7 @@
       <content type="html" xml:base="https://shinjaewxxk.github.io/jekyll-basic">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Jekyll blog posting &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./jekyll-basic&quot;&gt;Jekyll blog - 카테고리별 포스팅 방법&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./jekyll-basic2&quot;&gt;Jekyll blog - 마크다운 문법을 이용한 포스팅 방법&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./jekyll-basic2&quot;&gt;Jekyll blog - 웹사이트 파비콘(favicon) 설정 방법&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;블로그 카테고리를 만들고 그 안에 글을 작성해보자&lt;/strong&gt;&lt;/p&gt;
 
@@ -124,7 +150,7 @@ subclass: ‘post tag-opencv’&lt;/p&gt;</content>
       
 
       
-        <summary type="html">Jekyll blog posting Jekyll blog - 카테고리별 포스팅 방법 Jekyll blog - 마크다운 문법을 이용한 포스팅 방법 블로그 카테고리를 만들고 그 안에 글을 작성해보자</summary>
+        <summary type="html">Jekyll blog posting Jekyll blog - 카테고리별 포스팅 방법 Jekyll blog - 웹사이트 파비콘(favicon) 설정 방법 블로그 카테고리를 만들고 그 안에 글을 작성해보자</summary>
       
 
       
