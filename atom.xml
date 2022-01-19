@@ -27,9 +27,32 @@
     
       
       <item>
-        <title>OpenCV 기초 - OpenCV tutorials</title>
+        <title>C++ 기초 - 따라 배우는 C++ (1)</title>
         
-          <description>&lt;p&gt;2022-01-19 opencv 포스팅 시작!&lt;/p&gt;
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;C++ 기초 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./cpp-basic&quot;&gt;C++ 기초 - 따라 배우는 C++ (1)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Wed, 19 Jan 2022 00:00:00 +0900</pubDate>
+        <link>
+        https://shinjaewxxk.github.io/cpp-basic</link>
+        <guid isPermaLink="true">https://shinjaewxxk.github.io/cpp-basic</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>OpenCV 기초 - OpenCV tutorials(1)</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;OpenCV 기초 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./opencv-basic&quot;&gt;OpenCV 기초 - OpenCV tutorials(1)&lt;/a&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+&lt;p&gt;2022-01-19 opencv 포스팅 시작!&lt;/p&gt;
 </description>
         
         <pubDate>Tue, 18 Jan 2022 00:00:00 +0900</pubDate>
@@ -56,49 +79,6 @@
         <link>
         https://shinjaewxxk.github.io/jekyll-basic</link>
         <guid isPermaLink="true">https://shinjaewxxk.github.io/jekyll-basic</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>Python 강좌(2) - Python 제어문</title>
-        
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Python 강좌는 여러 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-basic&quot;&gt;Python 강좌(1) - Python 기본&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;Python 강좌(2) - Python 제어문&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;python tag를 추후에 원하는 태그명으로 설정해야함&lt;/p&gt;
-</description>
-        
-        <pubDate>Mon, 08 Jun 2020 00:00:00 +0900</pubDate>
-        <link>
-        https://shinjaewxxk.github.io/python-control-statement</link>
-        <guid isPermaLink="true">https://shinjaewxxk.github.io/python-control-statement</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>Python 강좌(1) - Python 기본</title>
-        
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Python 강좌는 여러 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-basic&quot;&gt;Python 강좌(1) - Python 기본&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;Python 강좌(2) - Python 제어문&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;python tag를 추후에 원하는 태그명으로 설정해야함&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;syntaxHighlight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-   &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;Hello World&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-   &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-</description>
-        
-        <pubDate>Fri, 28 Sep 2018 01:40:00 +0900</pubDate>
-        <link>
-        https://shinjaewxxk.github.io/python-basic</link>
-        <guid isPermaLink="true">https://shinjaewxxk.github.io/python-basic</guid>
       </item>
       
     

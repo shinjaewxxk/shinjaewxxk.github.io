@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://shinjaewxxk.github.io/tag/opencv/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://shinjaewxxk.github.io/" rel="alternate" type="text/html" />
-  <updated>2022-01-19T11:16:14+09:00</updated>
+  <updated>2022-01-19T11:31:40+09:00</updated>
   <id>https://shinjaewxxk.github.io/tag/opencv/feed.xml</id>
 
   
@@ -32,12 +32,17 @@
 
   
     <entry>
-      <title type="html">OpenCV 기초 - OpenCV tutorials</title>
-      <link href="https://shinjaewxxk.github.io/opencv-basic" rel="alternate" type="text/html" title="OpenCV 기초 - OpenCV tutorials" />
+      <title type="html">OpenCV 기초 - OpenCV tutorials(1)</title>
+      <link href="https://shinjaewxxk.github.io/opencv-basic" rel="alternate" type="text/html" title="OpenCV 기초 - OpenCV tutorials(1)" />
       <published>2022-01-18T00:00:00+09:00</published>
       <updated>2022-01-18T00:00:00+09:00</updated>
       <id>https://shinjaewxxk.github.io/opencv-basic</id>
-      <content type="html" xml:base="https://shinjaewxxk.github.io/opencv-basic">&lt;p&gt;2022-01-19 opencv 포스팅 시작!&lt;/p&gt;</content>
+      <content type="html" xml:base="https://shinjaewxxk.github.io/opencv-basic">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;OpenCV 기초 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./opencv-basic&quot;&gt;OpenCV 기초 - OpenCV tutorials(1)&lt;/a&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+&lt;p&gt;2022-01-19 opencv 포스팅 시작!&lt;/p&gt;</content>
 
       
       
@@ -58,7 +63,7 @@
       
 
       
-        <summary type="html">2022-01-19 opencv 포스팅 시작!</summary>
+        <summary type="html">OpenCV 기초 OpenCV 기초 - OpenCV tutorials(1) 2022-01-19 opencv 포스팅 시작!</summary>
       
 
       
