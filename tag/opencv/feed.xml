@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://shinjaewxxk.github.io/tag/opencv/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://shinjaewxxk.github.io/" rel="alternate" type="text/html" />
-  <updated>2022-01-19T23:56:57+09:00</updated>
+  <updated>2022-01-20T13:56:12+09:00</updated>
   <id>https://shinjaewxxk.github.io/tag/opencv/feed.xml</id>
 
   
@@ -30,6 +30,49 @@
   
   
 
+  
+    <entry>
+      <title type="html">OpenCV 프로그래밍 - Chapter 03 간단한 그래픽 및 이벤트 처리</title>
+      <link href="https://shinjaewxxk.github.io/opencv-ch3" rel="alternate" type="text/html" title="OpenCV 프로그래밍 - Chapter 03 간단한 그래픽 및 이벤트 처리" />
+      <published>2022-01-20T00:00:00+09:00</published>
+      <updated>2022-01-20T00:00:00+09:00</updated>
+      <id>https://shinjaewxxk.github.io/opencv-ch3</id>
+      <content type="html" xml:base="https://shinjaewxxk.github.io/opencv-ch3">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;python으로 배우는 OpenCV 프로그래밍 &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./opencv-ch1&quot;&gt;OpenCV 프로그래밍 - Chapter 01 서론&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./opencv-ch2&quot;&gt;OpenCV 프로그래밍 - Chapter 02 영상 및 비디오 입출력&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./opencv-ch3&quot;&gt;OpenCV 프로그래밍 - Chapter 03 간단한 그래픽 및 이벤트 처리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./opencv-ch4&quot;&gt;OpenCV 프로그래밍 - Chapter 04 OpenCV 기본연산&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./opencv-ch5&quot;&gt;OpenCV 프로그래밍 - Chapter 05 임계값과 히스토그램 처리&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./opencv-ch6&quot;&gt;OpenCV 프로그래밍 - Chapter 06 영상 공간 필터링&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;이 포스팅은 ‘python으로 배우는 OpenCV 프로그래밍’ 교재를 참고하여 작성하였습니다.&lt;/strong&gt;&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>shinjaewxxk</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="opencv" />
+      
+
+      
+        <summary type="html">python으로 배우는 OpenCV 프로그래밍 OpenCV 프로그래밍 - Chapter 01 서론 OpenCV 프로그래밍 - Chapter 02 영상 및 비디오 입출력 OpenCV 프로그래밍 - Chapter 03 간단한 그래픽 및 이벤트 처리 OpenCV 프로그래밍 - Chapter 04 OpenCV 기본연산 OpenCV 프로그래밍 - Chapter 05 임계값과 히스토그램 처리 OpenCV 프로그래밍 - Chapter 06 영상 공간 필터링 이 포스팅은 ‘python으로 배우는 OpenCV 프로그래밍’ 교재를 참고하여 작성하였습니다.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">OpenCV 프로그래밍 - Chapter 02 영상 및 비디오 입출력</title>
@@ -104,8 +147,49 @@
   &lt;li&gt;cv2.imwrite()는 numpy.ndarray의 배열 img를 filename의 영상파일로 저장한다.&lt;br /&gt;파일의 확장자에 의해 영상포맷이 결정된다.&lt;br /&gt;params는 압축 관련 인수로 생략할 수 있다.&lt;/li&gt;
   &lt;li&gt;cv2.namedWindow()는 지정한 winname에 해당하는 이름을 갖는 윈도우를 생성한다.&lt;br /&gt;flags는 &lt;span style=&quot;background-color: #F7DDBE&quot;&gt;cv2.WINDOW_AUTOSIZE(디폴트)&lt;/span&gt;, &lt;span style=&quot;background-color: #F7DDBE&quot;&gt;cv2.WINDOW_NORMAL&lt;/span&gt;이 있다.&lt;/li&gt;
   &lt;li&gt;cv2.imshow()는 winname윈도우에 영상 mat를 표시한다.&lt;br /&gt;winname 윈도우가 생성되어 있지 않아도 실행가능하다.&lt;/li&gt;
-  &lt;li&gt;cv2&lt;/li&gt;
-&lt;/ol&gt;</content>
+  &lt;li&gt;cv2.waitKey()는 키보드 입력을 위해 ms단위로 대기한다. 디폴트값은 0이며 디폴트일땐 키보드 입력이 있을 때까지 무한대기한다.&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;cv2.destroyWindow()는 주어진 winname윈도우만 파괴하고, cv2.destroyAllWindows()는 모든 윈도우를 파괴한다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;cv2&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;imageFile&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'./data/lena.jpg'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;img&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cv2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imageFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# cv2.IMREAD_COLOR
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;img2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cv2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imageFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# cv2.IMREAD_GRAYSCALE
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cv2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imshow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Lena color'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;cv2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imshow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Lena grayscale'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;img2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;cv2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;waitKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;cv2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;destroyAllWindows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위 실습코드를 실행 시키면 다음과 같은 결과가 출력되며, 키보드 입력이 있으면 모든 윈도우가 파괴된다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/97214209/150270883-a9972694-898d-4502-a032-44c2730e3ef7.png&quot; alt=&quot;image&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;위 코드에서 얻을 수 있는 insight&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;cv2&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;imageFile&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'./data/lena.jpg'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;img&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cv2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imageFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# cv2.IMREAD_COLOR
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;img2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cv2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imageFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# cv2.IMREAD_GRAYSCALE
+# cv2.imshow('Lena color',img)
+# cv2.imshow('Lena grayscale',img2)
+&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# cv2.waitKey()
+# cv2.destroyAllWindows()
+&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;img2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위 코드를 실행하면 다음과 같은 결과가 출력된다.&lt;br /&gt;
+(512, 512, 3)&lt;br /&gt;
+(512, 512)&lt;br /&gt;
+이 결과가 의미하는 바는 &lt;span style=&quot;background-color: #F7DDBE&quot;&gt;img  = cv2.imread(imageFile)&lt;/span&gt;는 디폴트로 BGR 3채널의 값으로 출력됨을 알 수 있다 &lt;br /&gt;
+그리고 &lt;span style=&quot;background-color: #F7DDBE&quot;&gt;img2 = cv2.imread(imageFile, 0)&lt;/span&gt;는 flags값에 cv2.IMREAD_GRAYSCALE를 의미하는 0값이 입력되어 있으므로 1채널의 값으로 출력됨을 알 수 있다.&lt;br /&gt;
+또한 이미지의 픽셀이 512*512라는 것 또한 알 수 있다.&lt;/p&gt;</content>
 
       
       
