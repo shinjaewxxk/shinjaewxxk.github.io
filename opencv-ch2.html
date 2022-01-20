@@ -268,17 +268,20 @@ into the {body} of the default.hbs template -->
   </tbody>
 </table>
 
-<p><strong>각 메서드에 대한 설명</strong></p>
+<ul>
+  <li>각 메서드에 대한 설명
+    <ol>
+      <li>cv2.imread()는 영상파일을 numpy.ndarray의 배열로 읽어 반환한다.<br />읽기에 실패하면 None을 반환하며, flags는 <span style="background-color: #F7DDBE">cv2.IMREAD_COLOR(디폴트)</span>, <span style="background-color: #F7DDBE">cv2.IMREAD_GRAYSCALE</span>, <span style="background-color: #F7DDBE">cv2.IMREAD_UNCHANGED</span>등의 읽기 옵션이다.</li>
+      <li>cv2.imwrite()는 numpy.ndarray의 배열 img를 filename의 영상파일로 저장한다.<br />파일의 확장자에 의해 영상포맷이 결정된다.<br />params는 압축 관련 인수로 생략할 수 있다.</li>
+      <li>cv2.namedWindow()는 지정한 winname에 해당하는 이름을 갖는 윈도우를 생성한다.<br />flags는 <span style="background-color: #F7DDBE">cv2.WINDOW_AUTOSIZE(디폴트)</span>, <span style="background-color: #F7DDBE">cv2.WINDOW_NORMAL</span>이 있다.</li>
+      <li>cv2.imshow()는 winname윈도우에 영상 mat를 표시한다.<br />winname 윈도우가 생성되어 있지 않아도 실행가능하다.</li>
+      <li>cv2.waitKey()는 키보드 입력을 위해 ms단위로 대기한다. 디폴트값은 0이며 디폴트일땐 키보드 입력이 있을 때까지 무한대기한다.<br /></li>
+      <li>cv2.destroyWindow()는 주어진 winname윈도우만 파괴하고, cv2.destroyAllWindows()는 모든 윈도우를 파괴한다.</li>
+    </ol>
+  </li>
+</ul>
 
-<ol>
-  <li>cv2.imread()는 영상파일을 numpy.ndarray의 배열로 읽어 반환한다.<br />읽기에 실패하면 None을 반환하며, flags는 <span style="background-color: #F7DDBE">cv2.IMREAD_COLOR(디폴트)</span>, <span style="background-color: #F7DDBE">cv2.IMREAD_GRAYSCALE</span>, <span style="background-color: #F7DDBE">cv2.IMREAD_UNCHANGED</span>등의 읽기 옵션이다.</li>
-  <li>cv2.imwrite()는 numpy.ndarray의 배열 img를 filename의 영상파일로 저장한다.<br />파일의 확장자에 의해 영상포맷이 결정된다.<br />params는 압축 관련 인수로 생략할 수 있다.</li>
-  <li>cv2.namedWindow()는 지정한 winname에 해당하는 이름을 갖는 윈도우를 생성한다.<br />flags는 <span style="background-color: #F7DDBE">cv2.WINDOW_AUTOSIZE(디폴트)</span>, <span style="background-color: #F7DDBE">cv2.WINDOW_NORMAL</span>이 있다.</li>
-  <li>cv2.imshow()는 winname윈도우에 영상 mat를 표시한다.<br />winname 윈도우가 생성되어 있지 않아도 실행가능하다.</li>
-  <li>cv2.waitKey()는 키보드 입력을 위해 ms단위로 대기한다. 디폴트값은 0이며 디폴트일땐 키보드 입력이 있을 때까지 무한대기한다.<br /></li>
-  <li>cv2.destroyWindow()는 주어진 winname윈도우만 파괴하고, cv2.destroyAllWindows()는 모든 윈도우를 파괴한다.</li>
-</ol>
-
+<h3 id="영상파일-읽기-및-화면-표시">영상파일 읽기 및 화면 표시</h3>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">cv2</span>
 
 <span class="n">imageFile</span> <span class="o">=</span> <span class="s">'./data/lena.jpg'</span>
@@ -289,36 +292,95 @@ into the {body} of the default.hbs template -->
 
 <span class="n">cv2</span><span class="p">.</span><span class="n">waitKey</span><span class="p">()</span>
 <span class="n">cv2</span><span class="p">.</span><span class="n">destroyAllWindows</span><span class="p">()</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">img2</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>위 실습코드를 실행 시키면 다음과 같은 결과가 출력되며, 키보드 입력이 있으면 모든 윈도우가 파괴된다.</p>
 
 <p><img src="https://user-images.githubusercontent.com/97214209/150270883-a9972694-898d-4502-a032-44c2730e3ef7.png" alt="image" width="100%" /></p>
 
-<p><strong>위 코드에서 얻을 수 있는 insight</strong></p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">cv2</span>
-
-<span class="n">imageFile</span> <span class="o">=</span> <span class="s">'./data/lena.jpg'</span>
-<span class="n">img</span>  <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">imread</span><span class="p">(</span><span class="n">imageFile</span><span class="p">)</span>    <span class="c1"># cv2.IMREAD_COLOR
-</span><span class="n">img2</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">imread</span><span class="p">(</span><span class="n">imageFile</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="c1"># cv2.IMREAD_GRAYSCALE
-# cv2.imshow('Lena color',img)
-# cv2.imshow('Lena grayscale',img2)
-</span>
-<span class="c1"># cv2.waitKey()
-# cv2.destroyAllWindows()
-</span>
-<span class="k">print</span><span class="p">(</span><span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">img2</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>위 코드를 실행하면 다음과 같은 결과가 출력된다.<br />
+<p>또한 위 코드를 실행하면 다음과 같은 결과가 출력된다.<br /><br />
 (512, 512, 3)<br />
-(512, 512)<br />
+(512, 512)<br /><br />
 이 결과가 의미하는 바는 <span style="background-color: #F7DDBE">img  = cv2.imread(imageFile)</span>는 디폴트로 BGR 3채널의 값으로 출력됨을 알 수 있다 <br />
 그리고 <span style="background-color: #F7DDBE">img2 = cv2.imread(imageFile, 0)</span>는 flags값에 cv2.IMREAD_GRAYSCALE를 의미하는 0값이 입력되어 있으므로 1채널의 값으로 출력됨을 알 수 있다.<br />
 또한 이미지의 픽셀이 512*512라는 것 또한 알 수 있다.</p>
 
+<h3 id="영상파일-저장">영상파일 저장</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">cv2</span>
+
+<span class="n">imageFile</span> <span class="o">=</span> <span class="s">'./data/lena.jpg'</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">imread</span><span class="p">(</span><span class="n">imageFile</span><span class="p">)</span> <span class="c1"># cv2.imread(imageFile, cv2.IMREAD_COLOR)
+</span><span class="n">cv2</span><span class="p">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s">'./data/Lena.bmp'</span><span class="p">,</span> <span class="n">img</span><span class="p">)</span>
+<span class="n">cv2</span><span class="p">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s">'./data/Lena.png'</span><span class="p">,</span> <span class="n">img</span><span class="p">)</span>
+<span class="n">cv2</span><span class="p">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s">'./data/Lena2.png'</span><span class="p">,</span><span class="n">img</span><span class="p">,</span> <span class="p">[</span><span class="n">cv2</span><span class="p">.</span><span class="n">IMWRITE_PNG_COMPRESSION</span><span class="p">,</span> <span class="mi">9</span><span class="p">])</span>
+<span class="n">cv2</span><span class="p">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s">'./data/Lena2.jpg'</span><span class="p">,</span> <span class="n">img</span><span class="p">,</span> <span class="p">[</span><span class="n">cv2</span><span class="p">.</span><span class="n">IMWRITE_JPEG_QUALITY</span><span class="p">,</span> <span class="mi">90</span><span class="p">])</span>
+</code></pre></div></div>
+
+<p>위 실습 코드는 영상파일을 저장하는 코드이며 간단한 예제이므로 설명은 생략한다.</p>
+
+<h3 id="matplotlib-1--컬러-영상-표시">matplotlib 1 : 컬러 영상 표시</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">cv2</span>
+<span class="kn">from</span>   <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="n">imageFile</span> <span class="o">=</span> <span class="s">'./data/lena.jpg'</span>
+<span class="n">imgBGR</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">imread</span><span class="p">(</span><span class="n">imageFile</span><span class="p">)</span> <span class="c1"># cv2.IMREAD_COLOR
+#plt.axis('off')
+</span><span class="n">plt</span><span class="p">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">imgBGR</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">imgRGB</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">imgBGR</span><span class="p">,</span><span class="n">cv2</span><span class="p">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">imgRGB</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+<p>matplotlib은 BGR이 디폴트고, cv2는 RGB가 디폴트이므로 plt.show()를 사용해 결과를 출력할때에는 <span style="background-color: #F7DDBE">cv2.cvtColor()</span>를 사용해서 BGR을 RGB로 변환해줘야 한다.<br />
+변환하지 않고 그대로 출력할 경우 다음과 같고<br />
+<img src="https://user-images.githubusercontent.com/97214209/150283462-9f20535a-faa6-4dd3-9e78-c62f5691e5ef.png" alt="image" />
+변환하고 출력할 경우 다음과 같다.
+<img src="https://user-images.githubusercontent.com/97214209/150283217-7c7386d1-f143-4956-9765-9d2e8f407b48.png" alt="image" /></p>
+
+<p>각 출력결과의 하단에 표시된 값을 비교하면 이해하기 쉽다.
+즉 채널을 표현하는 순서가 다를 뿐 RGB로 처리하는 것은 동일하다.<br />
+<span style="background-color: #F7DDBE">plt는 BGR순서로 RGB를 표현, cv2는 RGB순서로 RGB를 표현</span></p>
+
+<h3 id="matplotlib-2--그레이스케일-영상-표시">matplotlib 2 : 그레이스케일 영상 표시</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">cv2</span>
+<span class="kn">from</span>   <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="n">imageFile</span> <span class="o">=</span> <span class="s">'./data/lena.jpg'</span>
+<span class="n">imgGray</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">imread</span><span class="p">(</span><span class="n">imageFile</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">IMREAD_GRAYSCALE</span><span class="p">)</span>
+<span class="c1">#plt.axis('off')
+</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">imgGray</span><span class="p">,</span> <span class="n">cmap</span> <span class="o">=</span> <span class="s">"gray"</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s">'bicubic'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+<p><span style="background-color: #F7DDBE">plt.imshow(imgGray, cmap = “gray”, interpolation=’bicubic’)</span>는 imgGray영상을 ‘gray’컬러맵(cmap), ‘bicubic’으로 보간한다.<br />
+따라서 다음과 같은 결과가 출력되며 3개의 채널을 가지던 RGB와 달리 1개의 채널만 가지고 있음을 알 수 있다.
+<img src="https://user-images.githubusercontent.com/97214209/150288275-ca8404cd-76cf-440a-99f6-f0ce068ccf22.png" alt="image" />
+만약 <span style="background-color: #F7DDBE">plt.imshow(imgGray)</span>로 결과를 출력한다면 다음과 같은 결과가 출력된다.
+<img src="https://user-images.githubusercontent.com/97214209/150288748-9b000f6e-328b-4772-a0a2-5efc32e92d14.png" alt="image" />
+<span style="background-color: #F7DDBE">실행 시켜본 결과 0이 검정색 255가 흰색을 의미하는 것을 알 수 있었다.</span></p>
+
+<p>위에서 plt로 결과 출력한 윈도우에는 여백이 존재한다.<br />
+다음 코드는 이 여백을 조정하는 코드이다.</p>
+
+<h3 id="matplotlib3--여백-조정-및-영상-저장">matplotlib3 : 여백 조정 및 영상 저장</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">cv2</span>
+<span class="kn">from</span>   <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="n">imageFile</span> <span class="o">=</span> <span class="s">'./data/lena.jpg'</span>
+<span class="n">imgGray</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">imread</span><span class="p">(</span><span class="n">imageFile</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">IMREAD_GRAYSCALE</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">bottom</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">imgGray</span><span class="p">,</span> <span class="n">cmap</span> <span class="o">=</span> <span class="s">'gray'</span><span class="p">)</span>
+<span class="c1">##plt.axis('tight')
+</span><span class="n">plt</span><span class="p">.</span><span class="n">axis</span><span class="p">(</span><span class="s">'off'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">savefig</span><span class="p">(</span><span class="s">'./data/0205.png'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
 
                 </div>
             </section>
